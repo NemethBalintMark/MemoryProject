@@ -23,7 +23,8 @@ main img {
 }
 p span{
     padding: 10px 30px;
-
+    border-radius: 10px;
+    margin-left: 5px;
     background-color: rgba(243, 238, 230,0.5);
 }
 .k{align-items: center
