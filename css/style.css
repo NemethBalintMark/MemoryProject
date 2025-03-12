@@ -12,15 +12,14 @@ main div {
 }
 main img {
   width: 120px;
-  
-  
+  height: 120px;
 }
+
 .kartya{
     width: 120px;
     margin: 30px;
     border: none;
     background-color: transparent;
-    
 }
 
 .gomb:hover{
@@ -28,13 +27,15 @@ main img {
     color: black !important;
     border: none;
 }
+
 p span{
     padding: 10px 30px;
     border-radius: 10px;
     margin-left: 5px;
     background-color: rgba(243, 238, 230,0.5);
 }
-.k{align-items: center
 
+.k{
+  align-items: center
 }
 

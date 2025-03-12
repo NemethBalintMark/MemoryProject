@@ -24,7 +24,7 @@ function start() {
 function flip(card) {
     for (var i = 0; i < cards.length; i++) {
         if (card == cards[i]) {
-            alert(i);
+            card.innerHTML = `<img src="img/${fruits[i]}.png" alt="Card" title="Card">`;
         }
     }
 }
