@@ -40,14 +40,15 @@ function flip(card) {
                 card.classList.add("flipped");
 
                 forditas.push(fruits[i]);
+                forditas.push(card);
             }
         }
 
-        forditas.push(card);
 
         if (fordit == 2) {
             if (forditas[0] != forditas[2]) {
-                setTimeout(() => {
+                console.log(forditas);
+                setTimeout(() => {                    
                     forditas[1].classList.remove("flipped");
                     forditas[3].classList.remove("flipped");
                     forditas[1].innerHTML = `<img src="img/card-background.png" alt="Card" title="Card">`;
