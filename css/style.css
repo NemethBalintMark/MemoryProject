@@ -1,8 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
 
 body {
   font-family: "Merriweather", serif;
   font-weight: 400;
   font-style: normal;
+}
+
+main div {
+    justify-content: center
+
+}
+main img {
+  width: 120px;
+  margin: 30px
+  
+}
+
+.gomb:hover{
+    background-color: rgba(0, 128, 255, 0.7) !important;
+    color: black !important;
+    border: none;
+}
+p span{
+    padding: 10px 30px;
+
+    background-color: rgba(243, 238, 230,0.5);
+}
+.k{align-items: center
+
 }
 
