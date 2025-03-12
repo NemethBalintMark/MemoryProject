@@ -13,6 +13,8 @@ main div {
 main img {
   width: 120px;
   height: 120px;
+  padding: 2px;
+  border: 1px solid #165b64;
 }
 
 .kartya{
@@ -20,22 +22,31 @@ main img {
     margin: 30px;
     border: none;
     background-color: transparent;
+    
 }
-
+.gomb{
+  padding: 10px 40px;
+}
 .gomb:hover{
     background-color: rgba(0, 128, 255, 0.7) !important;
     color: black !important;
     border: none;
 }
 
-p span{
+.pont{
+  
     padding: 10px 30px;
     border-radius: 10px;
     margin-left: 5px;
+    ;
     background-color: rgba(243, 238, 230,0.5);
 }
 
 .k{
   align-items: center
+}
+.f{
+  margin-top: 50px;
+  margin-right: 5px;
 }
 
