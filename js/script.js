@@ -31,6 +31,15 @@ function start() {
     pontKiir.innerHTML = pont;
 }
 
+function visszaFordit() {
+    forditas[1].classList.remove("flipped");
+    forditas[3].classList.remove("flipped");
+    forditas[1].innerHTML = `<img src="img/card-background.png" alt="Card" title="Card">`;
+    forditas[3].innerHTML = `<img src="img/card-background.png" alt="Card" title="Card">`;
+    forditas = [];
+    fordit = 0;
+}
+
 function flip(card) {
     if (!card.classList.contains("flipped") && fordit < 2) {
         fordit += 1;
@@ -48,21 +57,13 @@ function flip(card) {
         if (fordit == 2) {
             if (forditas[0] != forditas[2]) {
                 console.log(forditas);
-                setTimeout(() => {                    
-                    forditas[1].classList.remove("flipped");
-                    forditas[3].classList.remove("flipped");
-                    forditas[1].innerHTML = `<img src="img/card-background.png" alt="Card" title="Card">`;
-                    forditas[3].innerHTML = `<img src="img/card-background.png" alt="Card" title="Card">`;
-                }, 1);
-
-                
+                setTimeout(function() {visszaFordit()}, 1000);
             } else {
-                pont += 1;
-                pontKiir.innerHTML = pont;
+                forditas = [];
+                fordit = 0;
             }
-
-            forditas = [];
-            fordit = 0;
+            pont += 1;
+            pontKiir.innerHTML = pont;
         }
     }
 
