@@ -43,12 +43,11 @@ main img {
   padding: 10px 40px;
 }
 
-.pont{
+.pont, .rekord{
   
     padding: 10px 30px;
     border-radius: 10px;
     margin-left: 5px;
-    ;
     background-color: rgba(243, 238, 230,0.5);
 }
 
