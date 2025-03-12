@@ -71,3 +71,8 @@ ul{
   background-color: rgba(0, 128, 255, 0.7);
   display: none;
 }
+
+.nyertel-div {
+  text-align: center;
+  margin-bottom: 50px;
+}

@@ -36,6 +36,7 @@ function start() {
     pontKiir.innerHTML = pont;
     rekordKiir.innerHTML = rekord;
     document.querySelector(".nyertel").innerHTML = "";
+    document.querySelector(".nyertel").style.display = "none";
 }
 
 function flipBack() {
@@ -54,6 +55,7 @@ function win() {
     }
 
     document.querySelector(".nyertel").innerHTML = "Nyertél!!!";
+    document.querySelector(".nyertel").style.display = "inline";
 }
 
 function flip(card) {
