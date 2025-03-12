@@ -4,9 +4,14 @@ var cards = [];
 var fordit = 0;
 var forditas = [];
 var pontKiir = document.querySelector(".pont");
+var rekordKiir = document.querySelector(".rekord");
+var forditott = 0;
+var rekord = null;
 
 function start() {
     pont = 0;
+    forditott = 0;
+    fruits = ["apple", "cherry", "grape", "orange", "peach", "pear", "strawberry", "watermelon"];
     fruits = fruits.concat(fruits);
     i = fruits.length;
 
@@ -29,15 +34,26 @@ function start() {
     fordit = 0;
     forditas = [];
     pontKiir.innerHTML = pont;
+    rekordKiir.innerHTML = rekord;
+    document.querySelector(".nyertel").innerHTML = "";
 }
 
-function visszaFordit() {
+function flipBack() {
     forditas[1].classList.remove("flipped");
     forditas[3].classList.remove("flipped");
     forditas[1].innerHTML = `<img src="img/card-background.png" alt="Card" title="Card">`;
     forditas[3].innerHTML = `<img src="img/card-background.png" alt="Card" title="Card">`;
     forditas = [];
     fordit = 0;
+}
+
+function win() {
+    if (rekord > pont || rekord == null) {
+        rekord = pont;
+        rekordKiir.innerHTML = rekord;
+    }
+
+    document.querySelector(".nyertel").innerHTML = "Nyertél!!!";
 }
 
 function flip(card) {
@@ -56,14 +72,18 @@ function flip(card) {
 
         if (fordit == 2) {
             if (forditas[0] != forditas[2]) {
-                console.log(forditas);
-                setTimeout(function() {visszaFordit()}, 1000);
+                setTimeout(function() {flipBack()}, 1000);
             } else {
+                forditott += 1;
                 forditas = [];
                 fordit = 0;
             }
             pont += 1;
             pontKiir.innerHTML = pont;
+        }
+
+        if (forditott == 8) {
+            win();
         }
     }
 
