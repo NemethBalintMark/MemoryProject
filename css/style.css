@@ -12,8 +12,15 @@ main div {
 }
 main img {
   width: 120px;
-  margin: 30px
   
+  
+}
+.kartya{
+    width: 120px;
+    margin: 30px;
+    border: none;
+    background-color: transparent;
+    
 }
 
 .gomb:hover{
